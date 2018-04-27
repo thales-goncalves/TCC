@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.header h1 {
+	color: white;
+	text-align: center;
+}
+
+#slider {
+	width: 720px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 20px;
+	margin: 20px auto;
+}
+/*the sildeer div has a defined width and height which acts as a screen inside another screen*/
+#slider .slides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+/*the list inside has a greater width and height to cover all the slideX with a display block type*/
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	width: 720px;
+	height: 400px;
+	text-align: center;
+	font-size: 30px;
+	color: lightblue;
+}
+
+#slider .slide p {
+	position: relative;
+	top: 170px;
+}
+
+/*Each slid has the same width as that of the slider hence covering the whole span*/
+.slide1 {
+	background: #9e6ce4;
+}
+
+.slide2 {
+	background: #6c56aa;
+}
+
+.slide3 {
+	background: #483490;
+}
+
+.slide4 {
+	background: #082766;
+}
+
+.slide5 {
+	background: #0d4950;
+}
+
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after
+	{
+	height: 450%;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+
+/* Thar Buttons */
+
+a.animated-button.thar-one {
+	color: #344358;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #344358;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-one:hover {
+	color: #fff !important;
+	background-color: transparent;
+	text-shadow: none;
+}
+a.animated-button.thar-one:hover:before {
+	bottom: 0%;
+	top: auto;
+	height: 100%;
+}
+a.animated-button.thar-one:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #fff !important;
+	background: #D24D57;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-two {
+	color: #344358;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #344358;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-two:hover {
+	color: #fff !important;
+	background-color: transparent;
+	text-shadow: ntwo;
+}
+a.animated-button.thar-two:hover:before {
+	top: 0%;
+	bottom: auto;
+	height: 100%;
+}
+a.animated-button.thar-two:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #fff !important;
+	background: #65b37a;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-three {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-three:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-four {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-four:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nfour;
+}
+a.animated-button.thar-four:hover:before {
+	right: 0%;
+	left: auto;
+	width: 100%;
+}
+a.animated-button.thar-four:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}

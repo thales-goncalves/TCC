@@ -1,0 +1,12 @@
+com\ia\web\repositoies\UserRepository.class
+com\ia\configuration\JPAConfiguration.class
+com\ia\configuration\SpringSecurityConfiguration.class
+com\ia\web\controllers\IndexController.class
+com\ia\configuration\ServletSpringMVC.class
+com\ia\web\models\Role.class
+com\ia\web\models\User.class
+com\ia\configuration\PropertiesWithJavaConfig.class
+com\ia\web\services\UserService.class
+com\ia\configuration\AppWebConfiguration.class
+com\ia\configuration\SecurityConfiguration.class
+com\ia\web\controllers\Sign.class
