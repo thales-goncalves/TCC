@@ -87,10 +87,10 @@ a.animated-button:link:after, a.animated-button:visited:after {
 	top: 50%;
 	width: 150%;
 	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease ;
+	-o-transition: all 0.75s ease ;
+	transition: all 0.75s ease 
 }
 
 a.animated-button:link:hover, a.animated-button:visited:hover {
@@ -133,7 +133,7 @@ a.animated-button.thar-one {
 	display: block;
 	position: relative;
 	border: 2px solid #344358;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 
 }
 a.animated-button.thar-one:hover {
 	color: #fff !important;
@@ -156,7 +156,7 @@ a.animated-button.thar-one:before {
 	content: '';
 	color: #fff !important;
 	background: #D24D57;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 
 }
 a.animated-button.thar-two {
 	color: #344358;
@@ -164,7 +164,7 @@ a.animated-button.thar-two {
 	display: block;
 	position: relative;
 	border: 2px solid #344358;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 
 }
 a.animated-button.thar-two:hover {
 	color: #fff !important;
@@ -187,7 +187,7 @@ a.animated-button.thar-two:before {
 	content: '';
 	color: #fff !important;
 	background: #65b37a;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 
 }
 a.animated-button.thar-three {
 	color: #fff;
@@ -196,7 +196,7 @@ a.animated-button.thar-three {
 	position: relative;
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
+
 }
 a.animated-button.thar-three:hover {
 	color: #000 !important;
@@ -220,7 +220,7 @@ a.animated-button.thar-three:before {
 	color: #000 !important;
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
+
 }
 a.animated-button.thar-four {
 	color: #fff;
@@ -229,7 +229,7 @@ a.animated-button.thar-four {
 	position: relative;
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
+
 }
 a.animated-button.thar-four:hover {
 	color: #000 !important;
@@ -253,5 +253,5 @@ a.animated-button.thar-four:before {
 	color: #000 !important;
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
+
 }
