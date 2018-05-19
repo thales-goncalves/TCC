@@ -7,13 +7,13 @@
 	<html lang="en">
 
 	<head>
+
 		<meta http-equiv="Content-Type" content="text/html">
 
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<meta name="description" content="">
 			<meta name="author" content="">
-			<link rel="icon" href="../../../../favicon.ico">
 
 			<meta name="_csrf" content="${_csrf.token}" />
 			<meta name="_csrf_header" content="${_csrf.headerName}" />
@@ -21,14 +21,13 @@
 
 			<title>AI - Assistente Interpessoal</title>
 
-			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-
-			<link href="resources/css/login.css" rel="stylesheet">
-			<link href="resources/css/slider.css" rel="stylesheet">
+			
 			<link href="resources/css/blog.css" rel="stylesheet">
+			<link href="resources/css/slider.css" rel="stylesheet">
+
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 			<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -84,7 +83,7 @@
 		</div>
 		<div></div>
 		<div class="footer-dark">
-<!-- 			<footer>
+			<footer>
 				<div class="container">
 					<div class="row">
 						<div class="col item social">
@@ -104,7 +103,7 @@
 					</div>
 					<p class="copyright">Company Name © 2017</p>
 				</div>
-			</footer> -->
+			</footer>
 		</div>
 	</body>
 
@@ -139,8 +138,6 @@
 				}
 		
 				 var ajaxData = JSON.stringify(formData)
-				 console.log(formData)
-				 console.log(ajaxData)
 				 requestAJAX("POST","save",ajaxData,token,header);
 			});
 		

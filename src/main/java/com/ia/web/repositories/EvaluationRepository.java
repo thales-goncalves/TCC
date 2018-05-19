@@ -9,6 +9,7 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Repository;
 
 import com.ia.web.models.Evaluations;
+import com.ia.web.models.Workfields;
 
 @Repository
 @Transactional
@@ -23,6 +24,10 @@ public class EvaluationRepository {
 	
 	public List<Evaluations> findAll(){
 		return manager.createQuery("select e from Evaluations e", Evaluations.class).getResultList();
+	}
+	
+	public List<Workfields> findAllWorksfields(){
+		return manager.createQuery("select w from Workfields w", Workfields.class).getResultList();
 	}
 
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ia.web.models.Evaluations;
+import com.ia.web.models.Workfields;
 import com.ia.web.repositories.EvaluationRepository;
 
 @Service
@@ -20,6 +21,10 @@ public class EvaluationService {
 	
 	public List<Evaluations> findAll(){
 		return evaluationRepository.findAll();
+	}
+	
+	public List<Workfields> findAllWorksfields(){
+		return evaluationRepository.findAllWorksfields();
 	}
 	
 }
