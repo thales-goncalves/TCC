@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
 
 import com.ia.web.models.Evaluations;
@@ -28,6 +29,12 @@ public class EvaluationRepository {
 	
 	public List<Workfields> findAllWorksfields(){
 		return manager.createQuery("select w from Workfields w", Workfields.class).getResultList();
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Evaluations> findByUser(UserDetails user){
+		return manager.createQuery("select e from Evaluations e where user = :user")
+				.setParameter("user", user).getResultList();
 	}
 
 }

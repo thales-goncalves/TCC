@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.security.core.userdetails.UserDetails;
+
 import com.google.gson.annotations.Expose;
 
 import lombok.Getter;
@@ -28,5 +30,9 @@ public class Evaluations {
 		@Column(name = "value")
 		@Expose
 		private String value;
+		
+		@Column(name = "user")
+		@Expose
+		private UserDetails user;
 		
 }

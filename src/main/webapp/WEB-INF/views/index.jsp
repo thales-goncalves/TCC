@@ -73,16 +73,23 @@
 						<a id="like" class="btn btn-sm animated-button thar-two">Like</a>
 					</div>
 				</div>
+				<br>
 				<div class="row text-center">
 					<div class="col-md-6 col-sm-6 col-xs-12 offset-3">
-						<a id="result" style="background-color: blueviolet" class="btn btn-sm animated-button thar-two">Result</a>
+						<a id="result" style="background-color: 0C59FF" class="btn btn-sm animated-button thar-two">Result</a>
+					</div>
+				</div>
+				<br>
+				<div class="row text-center">
+					<div class="col-md-6 col-sm-6 col-xs-12 offset-3">
+						<a id="us" style="background-color: 0C59FF" class="btn btn-sm animated-button thar-two">Users</a>
 					</div>
 				</div>
 
 			</div>
 		</div>
 		<div></div>
-		<div class="footer-dark">
+		<!-- <div class="footer-dark">
 			<footer>
 				<div class="container">
 					<div class="row">
@@ -103,7 +110,7 @@
 					</div>
 					<p class="copyright">Company Name © 2017</p>
 				</div>
-			</footer>
+			</footer> -->
 		</div>
 	</body>
 
@@ -126,6 +133,11 @@
 				}
 			 
 			var obj = [];
+		
+			$("#us").click(function(){
+			
+				 requestAJAX("GET","us","",token,header);
+			});
 		
 			$("#result").click(function(){
 				console.log(obj)

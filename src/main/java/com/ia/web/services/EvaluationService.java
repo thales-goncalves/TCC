@@ -3,6 +3,7 @@ package com.ia.web.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import com.ia.web.models.Evaluations;
@@ -25,6 +26,10 @@ public class EvaluationService {
 	
 	public List<Workfields> findAllWorksfields(){
 		return evaluationRepository.findAllWorksfields();
+	}
+	
+	public List<Evaluations> findByUser(UserDetails user){
+		return evaluationRepository.findByUser(user);
 	}
 	
 }
