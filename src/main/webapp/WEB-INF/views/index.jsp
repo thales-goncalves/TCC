@@ -111,7 +111,7 @@
 					<p class="copyright">Company Name © 2017</p>
 				</div>
 			</footer> -->
-		</div>
+		
 	</body>
 
 	<script type="text/javascript">
